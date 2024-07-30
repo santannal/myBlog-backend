@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "book 1",
+      "message": "Welcome!"
+    },
+    {
+      "id": "2",
+      "name": "book 2",
+      "message": "Good blog<>!"
+    },
+    {
+      "id": "3",
+      "name": "book 3",
+      "message": "Bye!"
+    },
+    {
+      "id": "4",
+      "name": "book 4",
+      "message": "Message 4"
+    }
+  ]
+}
