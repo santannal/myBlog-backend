@@ -13,11 +13,17 @@ public class EmailService {
     private JavaMailSender javaMailSender;
 
     public String sendMail(EmailDetails details) {
-        SimpleMailMessage mailMessage = new SimpleMailMessage();
-        mailMessage.setTo(details.getEmail());
-        mailMessage.setSubject("Contato: " + details.getName());
-        mailMessage.setText(details.getText());
-        javaMailSender.send(mailMessage);
-        return "Email enviado com sucesso!";
+        try {
+            SimpleMailMessage mailMessage = new SimpleMailMessage();
+            mailMessage.setTo("testejaksjkajksdjk@outlook.com");
+            mailMessage.setSubject("Contato: " + details.getName());
+            mailMessage.setText("Nome: " + details.getName() + "\nEmail: " + details.getEmail() + "\nMensagem: "
+                    + details.getText());
+            javaMailSender.send(mailMessage);
+            return "Email enviado com sucesso!";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Erro ao enviar email: " + e.getMessage();
+        }
     }
 }
