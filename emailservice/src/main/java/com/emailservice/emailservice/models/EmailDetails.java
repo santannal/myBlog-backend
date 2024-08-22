@@ -1,4 +1,4 @@
-package com.models;
+package com.emailservice.emailservice.models;
 
 public class EmailDetails {
 
