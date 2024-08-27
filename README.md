@@ -8,6 +8,8 @@ The back-end of this blog project is designed to provide a robust and scalable A
 
 ## 🚀 Features
 
+- **Post Management**: CRUD operations for creating, reading, updating, and deleting blog posts.
+- **Comment Management**: CRUD operations for managing comments on posts.
 - **Email Notifications**: Sends email notifications using `MailSender` for important actions like new comments or posts.
 - **Testing**: Comprehensive unit and integration tests using `startertest`.
 - **Developer Tools**: Integrated with `devtools` for enhanced development experience.
