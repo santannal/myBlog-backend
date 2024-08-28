@@ -4,31 +4,25 @@
       "id": "1",
       "name": "Leonardo Sant'Anna",
       "email": "leonardosantanna@outlook.com.br",
-      "message": "Seja bem-vindo(a), crie seu primeiro POST!"
+      "message": "Seja bem-vindo(a), que tal criar seu primeiro < POST > ?"
     },
     {
-      "id": "d53e",
-      "name": "Fernanda ",
-      "email": "fabiana@emai.com",
-      "message": "Olá, Leonardo!"
+      "id": "b3e0",
+      "name": "Video",
+      "email": "video@email.com",
+      "message": "Olá, Linkedin!"
     },
     {
-      "id": "255d",
-      "name": "Fernanda ",
-      "email": "fabiana@emai.com",
-      "message": "a"
+      "id": "08ea",
+      "name": "Teste",
+      "email": "teste@email.com",
+      "message": "Testando!"
     },
     {
-      "id": "51f4",
-      "name": "Fernanda ",
-      "email": "fabiana@emai.com",
-      "message": "oi"
-    },
-    {
-      "id": "8a29",
-      "name": "Joãozinho",
-      "email": "joao@email.com",
-      "message": "Olá, sou João!"
+      "id": "4857",
+      "name": "Linkedin",
+      "email": "linkedin@ola.com",
+      "message": "Olá, Linkedin!"
     }
   ]
 }

@@ -4,7 +4,7 @@ public class EmailDetails {
 
     private String name;
     private String email;
-    private String text;
+    private String message;
 
     public String getName() {
         return name;
@@ -22,12 +22,12 @@ public class EmailDetails {
         this.email = email;
     }
 
-    public String getText() {
-        return text;
+    public String getMessage() {
+        return message;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setMessage(String message) {
+        this.message = message;
     }
 
 }

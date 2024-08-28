@@ -18,22 +18,15 @@ public class EmailService {
 
     public String sendMail(EmailDetails details) {
         try {
-
             MimeMessage mimeMessage = javaMailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
 
             helper.setTo("leonardosantanna@outlook.com.br");
             helper.setFrom("testejaksjkajksdjk@outlook.com");
             helper.setSubject("Contato: " + details.getName());
+            helper.setText("Nome: " + details.getName() + "\nEmail: " + details.getEmail() + "\nMensagem: " + details.getMessage());
 
-            SimpleMailMessage mailMessage = new SimpleMailMessage();
-            mailMessage.setTo("leonardosantanna@outlook.com.br"); // Destinatário
-            mailMessage.setFrom("testejaksjkajksdjk@outlook.com");
-            mailMessage.setSubject("Contato: " + details.getName());
-            mailMessage.setText(
-                    "Nome: " + details.getName() + "\nEmail: " + details.getEmail() + "\nMensagem: "
-                            + details.getText());
-            javaMailSender.send(mailMessage);
+            javaMailSender.send(mimeMessage);  // Usando MimeMessage para enviar o e-mail
             return "Email enviado com sucesso!";
         } catch (Exception e) {
             e.printStackTrace();
